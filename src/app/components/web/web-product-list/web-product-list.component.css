@@ -1,0 +1,21 @@
+.search {
+  height: inherit;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.color-green {
+  color: green;
+}
+
+.price {
+  font-size: 23px;
+  font-weight: 550;
+}
+
+.card {
+  cursor: pointer;
+}
+

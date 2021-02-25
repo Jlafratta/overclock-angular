@@ -1,0 +1,95 @@
+<!-- Modal -->
+<!-- <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  data-mdb-backdrop="true" data-mdb-keyboard="true">
+  <div class="modal-dialog   modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="modal-body pb-0">
+          <div class="container">
+            <p>Complete los datos para acceder al sistema</p>
+
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Correo electronico</mat-label>
+                <input matInput placeholder="email@example.com" [formControl]="email" required>
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-error *ngIf="( email.invalid && (email.dirty || email.touched) ) && email.errors.required">Este campo es obligatorio</mat-error>
+                <mat-error *ngIf="email.errors?.email">Email invalido</mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Contraseña</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+                <i mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide">
+                  <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                </i>
+                <mat-error *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.required">Este campo es obligatorio</mat-error>
+              </mat-form-field>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center pt-0 bt-none mb-3">
+          <button type="button" class="btn btn-danger" data-mdb-dismiss="modal">
+            Cancelar
+          </button>
+          <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" data-mdb-dismiss="{{ dismiss }}">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+<h1 mat-dialog-title>Iniciar sesión</h1>
+<div mat-dialog-content class="overflow-visible">
+ <p> Complete los datos para acceder al sistema.</p>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class=" pb-0" sty>
+      <div class="container">
+
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Correo electronico</mat-label>
+            <input matInput placeholder="email@example.com" [formControl]="email" required>
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error *ngIf="( email.invalid && (email.dirty || email.touched) ) && email.errors.required">Este campo es
+              obligatorio</mat-error>
+            <mat-error *ngIf="email.errors?.email">Email invalido</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+            <i mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </i>
+            <mat-error *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.required">Este
+              campo es obligatorio</mat-error>
+          </mat-form-field>
+        </div>
+
+      </div>
+    </div>
+    <div mat-dialog-actions class="d-flex justify-content-center mb-0">
+      <button type="button" class="btn btn-danger mx-2" mat-dialog-close>Cancelar</button>
+      <button type="submit" class="btn btn-primary mx-2" [disabled]="!loginForm.valid">Ingresar</button>
+    </div>
+    <!-- <div class="modal-footer d-flex justify-content-center pt-0 bt-none mb-3">
+      <button type="button" class="btn btn-danger" mat-dialog-close>
+        Cancelar
+      </button>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Ingresar</button>
+    </div> -->
+  </form>
+</div>
+
