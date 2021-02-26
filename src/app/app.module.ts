@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { WebComponent } from './components/web/web.component';
 import { WebNavbarComponent } from './components/web/web-navbar/web-navbar.component';
@@ -47,7 +49,9 @@ import { AdminComponent } from './components/admin/admin.component';
     MatIconModule,
     MatFormFieldModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

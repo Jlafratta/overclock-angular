@@ -19,3 +19,15 @@
   cursor: pointer;
 }
 
+.search-field {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fit-content mat-chip{
+  width: fit-content;
+}
+

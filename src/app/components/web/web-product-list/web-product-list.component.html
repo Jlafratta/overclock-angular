@@ -1,68 +1,65 @@
-<div class="container mt-4">
 
-      <!-- <div class="btn-group shadow-1">
-        <button type="button" class="btn btn-link dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
-          Categorias
+<nav class="navbar navbar-light bg-light shadow">
+  <div class="container mt-1">
+    <div class="col-md-6 d-none d-md-block">
+      <button class="navbar-toggler d-flex align-items-center" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><span class="m-2"> Filtrar productos</span>
+        <mat-icon class="material-icons-round">filter_list</mat-icon>
+      </button>
+    </div>
+    <div class="col col-md-6">
+      <div class="d-flex justify-content-center">
+        <mat-form-field class="search-field mx-2">
+          <mat-label>Buscar</mat-label>
+          <input matInput type="text" [ngModel]="filterValue">
+          <mat-icon class="material-icons-round" matSuffix>search</mat-icon>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="col-12 d-md-none">
+      <div class="row">
+        <button class="navbar-toggler d-flex justify-content-center" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="m-2"> Filtrar productos</span>
+          <mat-icon class="material-icons-round mt-1">filter_list</mat-icon>
         </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div> -->
-      <div class="col-md-12">
-        <div class="row">
-          <mat-accordion>
-            <mat-expansion-panel hideToggle class="shadow">
-              <mat-expansion-panel-header class="d-flex justify-content-between">
-                <div class="col-sm-6">
-                  <mat-panel-title class="mt-2">
-                    <span class="font-bold mt-4">CATEGORIAS</span>
-                  </mat-panel-title>
-                </div>
-                <div class="col-sm-6 d-flex justify-content-end">
-                  <!-- <form class="input-group shadow-1" style="width: auto;">
-                    <input type="search" class="form-control search" placeholder="Buscar..." aria-label="Buscar" />
-                    <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
-                      <i class="fas fa-search font-initial"></i>
-                    </button>
-                  </form> -->
-                  <mat-form-field class="example-form-field mt-3 mb-1">
-                    <mat-label>Buscar</mat-label>
-                    <input matInput type="text" [ngModel]="filterValue">
-                    <mat-icon matSuffix>search</mat-icon>
-                  </mat-form-field>
-                </div>
+      </div>
+    </div>
+  </div>
 
-                <!-- <mat-panel-description>
-                  This is a summary of the content
-                </mat-panel-description> -->
+</nav>
 
-              </mat-expansion-panel-header>
-              <mat-divider class="mb-3"></mat-divider>
-              <p>Listado de categorias...</p>
-              <mat-divider class="mb-3"></mat-divider>
-              <p>Listado de marcas...</p>
-            </mat-expansion-panel>
-          </mat-accordion>
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-light pb-3 shadow">
+    <div class="container">
+      <mat-icon class="float-end pointer mt-2" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent">close</mat-icon>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="my-3">Categoria</h4>
+          <mat-chip-list class="mat-chip-list-stacked fit-content" aria-label="Categorias">
+            <mat-chip>Procesadores</mat-chip>
+            <mat-chip>Motherboard</mat-chip>
+            <mat-chip>Memorias RAM</mat-chip>
+            <mat-chip>Placas de video</mat-chip>
+            <mat-chip>Fuentes</mat-chip>
+          </mat-chip-list>
+        </div>
+        <div class="col-md-6">
+          <h4 class="my-3">Marca</h4>
+          <mat-chip-list class="mat-chip-list-stacked fit-content" aria-label="Marcas">
+            <mat-chip>AMD</mat-chip>
+            <mat-chip>Asrock</mat-chip>
+            <mat-chip>Gigabyte</mat-chip>
+            <mat-chip>MSI</mat-chip>
+            <mat-chip>Cougar</mat-chip>
+          </mat-chip-list>
         </div>
       </div>
-      <!-- <div class="col-md-4">
-        <div class="row d-flex justify-content-center">
-          <form class="input-group shadow-1" style="width: 80%;">
-            <input type="search" class="form-control search" placeholder="Buscar..." aria-label="Buscar" />
-            <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
-              <i class="fas fa-search font-initial"></i>
-            </button>
-          </form>
-        </div>
-      </div> -->
-
+    </div>
+  </div>
 </div>
+
 
 <div class="container mt-4">
   <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
