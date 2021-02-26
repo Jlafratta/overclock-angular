@@ -14,3 +14,7 @@ input.example-right-align {
 .overflow-visible {
   overflow: visible;
 }
+
+.icon-gray {
+  color: rgba(0,0,0,.55);
+}

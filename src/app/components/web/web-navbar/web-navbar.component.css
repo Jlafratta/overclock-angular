@@ -4,3 +4,7 @@
   font-family: 'MuseoModerno', cursive;
   color: #4F4F4F;
 }
+
+.pointer {
+  cursor: pointer;
+}
